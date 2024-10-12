@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input-container{
+    @apply bg-input-bg flex p-2 w-[70%] text-white rounded-lg gap-3 self-center 
+}
+
+input{
+  @apply  border-none focus:outline-none outline-none bg-transparent focus:bg-transparent 
+}
+
+th{
+  @apply border-b-2 border-gray-200 px-4 py-2 text-left
+}
