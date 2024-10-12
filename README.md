@@ -1,7 +1,7 @@
 
 # Login and Registration System
 
-This project implements a login and registration system using Angular/React on the frontend and Node.js with MongoDB on the backend.
+This project implements a login and registration system using React on the frontend and Node.js with MongoDB on the backend.
 
 ## Features
 
@@ -27,7 +27,7 @@ This project implements a login and registration system using Angular/React on t
 
 ### Frontend
 
-- Angular (for login/registration forms) or React.js (for the user table)
+- React.js (for login/registration forms/for the user table)
 - Redux Toolkit for state management
 - React Hot Toast for notifications
 - Axios for API communication
@@ -75,7 +75,7 @@ Logs out the user by clearing the JWT token stored in cookies.
 
 ### Frontend (React or Angular)
 
-1. Navigate to the `frontend-angular` or `frontend-react` folder.
+1. Navigate to the  `frontend` folder.
 2. Install dependencies:
    ```bash
    npm install
@@ -101,13 +101,8 @@ Navigate to `http://localhost:3000`.
 
 - `components/`: Contains components for login, registration, user table, and profile modal.
 - `redux/`: Contains slices and actions for state management.
-- `services/`: Contains Axios methods for API requests.
+- `Pages/`: Contain Pages like Login, Register and HomePage
 
-### Frontend (Angular)
-
-- `components/`: Contains login and registration forms.
-- `services/`: Angular services for making API calls.
-- `auth-guard.service.ts`: Protects routes from unauthenticated access.
 
 ## Additional Features
 
