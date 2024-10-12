@@ -9,7 +9,7 @@ const MONGODB_URI = process.env.MONGODB_URI;
 
 if (!MONGODB_URI) {
   console.error("Mongo URI is not defined in environment variables!");
-  process.exit(1); // Exit process if MONGO_URI is not provided
+  process.exit(1); 
 }
 
 const databaseConnection = () => {

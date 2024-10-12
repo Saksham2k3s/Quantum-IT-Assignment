@@ -85,16 +85,9 @@ Logs out the user by clearing the JWT token stored in cookies.
      ```bash
      npm start
      ```
-   - For Angular:
-     ```bash
-     ng serve
-     ```
 
 ### Frontend (React)
 Navigate to `http://localhost:3000`.
-
-### Frontend (Angular)
-Navigate to `http://localhost:4200`.
 
 ## Project Structure
 
@@ -142,6 +135,3 @@ Navigate to `http://localhost:4200`.
 - After successful login, the user can access the protected user table page.
 - If the user tries to access the table without being logged in, they are redirected to the login page.
 
-## License
-
-This project is licensed under the MIT License.
