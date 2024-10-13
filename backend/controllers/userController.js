@@ -83,7 +83,6 @@ exports.userLogin = catchAsyncError(async (req, res) => {
     }
 
     const comparePassword = await bcrypt.compare(password, user.password);
-    console.log("Compare pass",comparePassword);
     if (!comparePassword) {
       return res.status(401).json({
         success: false,

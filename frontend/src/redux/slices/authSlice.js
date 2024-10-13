@@ -18,7 +18,8 @@ export const register = createAsyncThunk(
 
       return result.data;
     } catch (error) {
-      return rejectWithValue(error.response?.data || 'Registration failed');
+      console.log("This is error while register", error);
+      return rejectWithValue(error.response?.data?.message || 'Registration failed');
     }
   }
 );
@@ -36,7 +37,7 @@ export const login = createAsyncThunk(
       localStorage.setItem("user", JSON.stringify(user));
       return result.data;
     } catch (error) {
-      return rejectWithValue(error.response?.data || 'Login failed');
+      return rejectWithValue(error.response?.data?.message || 'Login failed');
     }
   }
 );
